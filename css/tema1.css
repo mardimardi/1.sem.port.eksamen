@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: "Hind Madurai";
+  background-color: #9e817a;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background-color: #63453e;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.buttondomain {
+  padding: 8px 8px;
+  border: 0px outset buttonborder;
+  border-radius: 30px;
+  color: #e0e0e0;
+  background-color: #63453e;
+  text-decoration: none;
+}
+a.buttonvideo {
+  padding: 8px 8px;
+  border: 0px outset buttonborder;
+  border-radius: 30px;
+  color: #e0e0e0;
+  background-color: #bc7272;
+  text-decoration: none;
+}
+
+header .logo {
+  width: 75px;
+  height: 65px;
+  background-color: #63453e;
+  border-radius: 5px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #090808;
+  padding: 10px 10px;
+  background-color: #e0e0e0;
+  border-radius: 45px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.section h2 {
+  margin-top: 0;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #f8f9f9;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+@media screen and (max-width: 800px) {
+  header nav {
+    display: none; /* Hide the navigation links on mobile */
+  }
+
+  .burger {
+    display: block; /* Show the burger menu */
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+}
+
+.section {
+  background-color: #63453e;
+  padding: 20px;
+  border-radius: 5px;
+}
+.section2 {
+  background-color: #a7cfeb;
+  padding: 2px;
+  border-radius: 45px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #63453e;
+  text-align: center;
+  font-size: 40px;
+}
+.section3 {
+  background-color: #a7cfeb;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #63453e;
+  text-align: center;
+  font-size: 15px;
+}
+
+.section4 {
+  background-color: #bc7272;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.section .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #a7cfeb;
+}
+
+footer {
+  background-color: #bc7272;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+footer div {
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  margin-top: 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  footer div {
+    margin-bottom: 0;
+  }
+}
