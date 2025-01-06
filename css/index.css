@@ -5,6 +5,7 @@ body {
   color: #fff;
 }
 
+
 header {
   background-color: #63453E;
   padding: 20px;
@@ -170,7 +171,7 @@ footer p {
 
 /* Layout and responsiveness for larger screens */
 @media (min-width: 768px) {
-  .section .grid {
+  .section .section3 .grid-container .grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
