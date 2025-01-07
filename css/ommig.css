@@ -13,6 +13,10 @@ header {
   justify-content: space-between;
 }
 
+a:hover {
+  background-color: rgb(178, 99, 59);
+  font-size: 20px;
+}
 
 header .logo {
   width: 75px;
