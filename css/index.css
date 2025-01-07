@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Hind Madurai";
+  padding: 0;
   background-color: #63453E;
   color: #fff;
 }
@@ -8,7 +9,7 @@ body {
 
 header {
   background-color: #63453E;
-  padding: 20px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
