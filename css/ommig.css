@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: "Hind Madurai";
-  background-color: #9E817A;
+  background-color: #9e817a;
   color: #fff;
   text-align: center;
 }
 header {
-  background-color: #63453E;
+  background-color: #63453e;
   padding: 20px 10px;
   display: flex;
   align-items: center;
@@ -18,10 +18,34 @@ a:hover {
   font-size: 20px;
 }
 
+h1 {
+  color: #63453e;
+}
+
+.section4 {
+  background-color: #bc7272;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+}
+.section5 {
+  background-color: #a7cfeb;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+}
 header .logo {
   width: 75px;
   height: 65px;
-  background-color: #63453E;
+  background-color: #63453e;
   border-radius: 5px;
 }
 
@@ -34,7 +58,7 @@ header nav a {
   text-decoration: none;
   color: #090808;
   padding: 10px 10px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border-radius: 45px;
 }
 
@@ -46,7 +70,7 @@ header nav a {
 }
 
 .section {
-  background-color: #63453E;
+  background-color: #63453e;
   padding: 20px;
   border-radius: 5px;
 }
@@ -55,7 +79,7 @@ header nav a {
 }
 
 .section2 {
-  background-color: #A7CFEB;
+  background-color: #a7cfeb;
   padding: 20px;
   border-radius: 45px;
   margin-left: 25%;
@@ -65,12 +89,12 @@ header nav a {
   font-size: 50px;
 }
 .section3 {
-  background-color: #A7CFEB;
+  background-color: #a7cfeb;
   padding: 20px;
   border-radius: 15px;
   margin-left: 25%;
   margin-right: 25%;
-  color: #63453E;
+  color: #63453e;
   text-align: center;
   font-size: 15px;
 }
@@ -92,11 +116,25 @@ header nav a {
 
 @media screen and (max-width: 800px) {
   header nav {
-    display: none; /* Hide the navigation links on mobile */
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #63453e;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  header nav.active {
+    display: flex;
+    opacity: 1;
   }
 
   .burger {
-    display: block; /* Show the burger menu */
+    display: block;
   }
 
   .burger.active .line:nth-child(1) {
@@ -113,8 +151,16 @@ header nav a {
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
-}
 
+  header nav a {
+    padding: 12px 18px;
+    background-color: #e0e0e0;
+    color: #090808;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
 
 .section h2 {
   margin-top: 0;
@@ -130,11 +176,11 @@ header nav a {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  background-color: #A7CFEB;
+  background-color: #a7cfeb;
 }
 
 footer {
-  background-color: #BC7272;
+  background-color: #bc7272;
   padding: 20px;
   display: flex;
   flex-direction: column;

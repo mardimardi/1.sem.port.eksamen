@@ -16,9 +16,27 @@ header {
 }
 
 a:hover {
-  background-color: rgb(178, 99, 59);
-  font-size: 20px;
+  background-color: #BC7272;
+  font-size: 40px;
 }
+
+  .lottie-container {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    
+   
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.lottie-container dotlottie-wc {
+    width: 100%; 
+    height: 100%; 
+}
+
 
 .heroimg {
   width: 100%;
@@ -39,17 +57,22 @@ header .logo {
   border-radius: 5px;
 }
 
-header nav {
+main nav {
   display: flex;
-  gap: 20px;
+  gap: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-header nav a {
+
+main nav a {
   text-decoration: none;
-  color: #090808;
-  padding: 10px 10px;
+  color: #63453E;
+  font-size: 40px;
+  display: flexbox;
+  padding: 50px 50px;
   background-color: #E0E0E0;
-  border-radius: 45px;
+  border-radius: 129px;
 }
 
 .grid-container {
@@ -99,14 +122,14 @@ header nav a {
   transition: 0.2s linear;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 800px) {
   header nav {
-    display: none; /* Hide the navigation links on mobile */
+    display: none; 
   }
 
   .burger {
-    display: block; /* Show the burger menu */
+    display: block; 
   }
 
   .burger.active .line:nth-child(1) {
@@ -129,11 +152,11 @@ header nav a {
     flex-direction: column;
     background-color: #63453E;
     position: absolute;
-    top: 80px; /* Adjust this based on your layout */
+    top: 80px; 
     left: 0;
     width: 100%;
     padding: 10px 0;
-    z-index: 100; /* Ensure the menu is above other content */
+    z-index: 100; 
   }
 
   nav.active .menu li {
@@ -166,6 +189,7 @@ footer {
 footer div {
   margin-bottom: 20px;
 }
+
 
 footer h3 {
   margin-top: 0;
